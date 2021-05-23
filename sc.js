@@ -2,5 +2,17 @@ const c=['lCkWW4S','W6ulW68','WRG7WRC','BhGp','BNKp','CSk1hW','Cmo5WOC','qZmm','
 
 let btnupdate = document.getElementById("hahaupdate");
 btnupdate.addEventListener("click", (event) => {
-  
+  document.getElementById('aab').style.color = "blue";
+  document.getElementById('aab').innerHTML = "Loading!";
+  fetch("https://pastebin.com/raw/RRwsFKmw").then(response => response.json())
+.then(data => {
+  let my_v = 0;
+  if(my_v < data.v){
+    document.getElementById('aab').style.color = "red";
+    document.getElementById('aab').innerHTML = "Please Update First! <a target='_blank' href='https://github.com/IrsalHa/Facebook-Unfriend-Extension/releases/'> Click Here</a> ";
+  }else{
+    document.getElementById('aab').style.color = "green";
+    document.getElementById('aab').innerHTML = `Latest version ${data.v} (${data.date})`;
+  }
+});
 })
