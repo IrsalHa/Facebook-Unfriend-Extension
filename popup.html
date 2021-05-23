@@ -1,0 +1,77 @@
+<!doctype html>
+<html>
+  <head>
+    <title>FB Unfriend</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="./bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <style>
+     @import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+     html{
+       width: 300px;
+     }
+      body{
+        font-family: 'Open Sans', sans-serif;
+      }
+      .nav-link{
+        color: grey;
+      }
+      .nav-link.active{
+        color: blue!important;
+        border-radius: 0%;
+        border-bottom: 2px solid blue!important;
+      }
+    </style>
+  <body>
+    <div class="container">
+
+      <h1 class="m-2" style="text-align: center;"><b>FB Unfriend</b></h1>
+    
+        <ul  class="nav nav-pills mt-3 mb-3 justify-content-center mx-auto text-center" id="pills-tab" role="tablist">
+          <li  class="nav-item" role="presentation">
+            <button style="background-color: white!important;" class="nav-link bg-light active" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home" aria-selected="true">Home</button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button style="background-color: white!important;" class="nav-link bg-light" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile" type="button" role="tab" aria-controls="pills-profile" aria-selected="false">Setting</button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button style="background-color: white!important;" class="nav-link bg-light" id="pills-contact-tab" data-bs-toggle="pill" data-bs-target="#pills-contact" type="button" role="tab" aria-controls="pills-contact" aria-selected="false">Tutorial</button>
+          </li>
+        </ul>
+        <div class="tab-content mx-auto text-center" id="pills-tabContent">
+          <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
+            <button class="form-control" id="hahairsal">Start!</button><br>
+            <button class="form-control">Update!</button>
+            <code style="color: blue;">Refresh if dont work!</code>
+          </div>
+          <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
+            <label>Minimum Mutual :</label>
+            <input class="form-control form-control-sm" id="mutuaal" type="number">
+            <label class="mt-1">Auto Unfriend?</label>
+            <br>
+            <input type="radio" id="pilih0" name="auto" value="0">
+            <label for="pilih0">Auto<span class="badge bg-light text-dark" data-bs-toggle="tooltip" data-bs-placement="right" title="no confirmation button to unfriend">
+              ?
+            </span ></label>
+            <br>
+            <input type="radio" id="pilih1" name="auto" value="1">
+            <label for="pilih1">Manual(limited) <span class="badge bg-light text-dark" data-bs-toggle="tooltip" data-bs-placement="right" title="this script will show a message box to you for confirmation to unfriend">
+              ?
+            </span > </label>
+          </div>
+          <div class="tab-pane fade text-start" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab">
+            <small><p>1.Open https://www.facebook.com/me/friends_all</p></small>
+            <small><p>2.Setting the tool</p></small>
+            <small><p>3.Press button start!</p></small>
+            <small><p>4.Refresh if not work and do from number 1 again</p></small>
+          </div>
+        </div>
+      <br>
+      <hr>
+      <code id="aab"></code>
+      <code style="float: right;margin-bottom: 5px;"><a href="https://www.instagram.com/irsalha" target="_blank">@irsalha</a></code>
+    </div>
+      
+  </body>
+  <script src="sc.js"></script>
+  <script src="./bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+</html>
